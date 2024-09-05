@@ -52,7 +52,7 @@ pipeline {
                 sh 'venv/bin/coverage xml'
             }
 
-            junit allowEmptyResults: true, testResults: '/var/lib/jenkins/workspace/publish-reports/Ch05/05_03-using-test-results/pytest_junit.xml'
+            junit allowEmptyResults: true, testResults: '**/pytest_junit.xml'
 
             /*junit allowEmptyResults: true, testResults: '**/pylint_junit.xml'*/
 
